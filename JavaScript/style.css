@@ -1,0 +1,80 @@
+/* boiler plate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+}
+/* main */
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 300px;
+}
+
+.top {
+
+    display: flex;
+
+}
+/* left */
+.left-section {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap: 5vh;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.left-section button {
+    width: fit-content;
+    font-size: 20px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+
+}
+
+button:active {
+    scale: 0.95;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-section img {
+    height: 500px;
+}
+/* bottom */
+.bottom .btns {
+    display: flex;
+    gap: 30px;
+}
+
+.bottom .btns div i {
+    font-size: 45px;
+}
