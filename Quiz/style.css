@@ -1,0 +1,229 @@
+/* boiler placte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    font-family: sans-serif;
+    background-color: #111;
+}
+/* for degree chanfgeing  */
+@property --deg {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+/* degree keyframe */
+@keyframes spin {
+    0%   { --deg: 0deg; }
+  100% { --deg: 360deg; }
+}
+
+/* main starts here  */
+main {
+    background: conic-gradient(from var(--deg), rgb(34, 15, 15), rgba(0, 0, 0, 0), rgb(34, 15, 15));
+    padding: 10px;
+    border-radius: 20px;
+
+    animation: spin 5s linear infinite;
+}
+
+.main {
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.175);
+    background: linear-gradient(180deg, #6b12ff, #0c0c1c);
+    width: 350px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 50px;
+    /* justify-content: space-between; */
+}
+
+/* top nav */
+.top-nav {
+    width: 100%;
+    background-color: rgb(77, 88, 212);
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.left-nav,
+.right-nav {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.left-nav {
+    background: #111;
+    color: #fff;
+}
+
+.right-nav {
+    background: rgb(255, 135, 91);
+    color: #111;
+}
+
+.middle-nav {
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 7px;
+    background-color: rgba(119, 126, 209, 0.562);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 20%;
+    height: 100%;
+    background-color: orangered;
+    border-radius: 20px;
+}
+
+/* question box  */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-box {
+    position: relative;
+    width: 300px;
+    border-radius: 12px;
+    padding: 20px 10px;
+    background: linear-gradient(180deg, #2a025e, #100622);
+    text-align: center;
+    color: #fff;
+}
+/* timer box */
+.timer-box {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid #ff7a00;
+    background-color: #100622;
+    color: white;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-box h2 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.category {
+    margin-top: 5px;
+    color: rgb(198, 179, 243);
+    font-size: 14px;
+}
+
+#question {
+    margin-top: 15px;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+/* options section */
+
+.options {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.option {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 14px 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option i {
+    /* background-color: red; */
+    border: 2px solid white;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+
+.option:hover {
+    background: rgba(255, 0, 0, 0.12);
+}
+
+/* correct */
+.option.correct {
+    background: rgba(0, 110, 0, 0.5);
+    border-color: rgb(0, 255, 0);
+}
+
+/* incorrect */
+.option.wrong {
+    background: rgba(110, 0, 0, 0.5);
+    border-color: rgb(255, 0, 0);
+}
+
+/* netx btn */
+
+.next-btn {
+    width: 100%;
+}
+
+.next-btn button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: linear-gradient(90deg, #ff7a00, #ff4400);
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
