@@ -1,0 +1,113 @@
+/* universal selector  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #0b7285, #5fd3d7);
+}
+
+/* weather card  */
+.weather-card {
+    width: 380px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 22px;
+    color: #fff;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 12px;
+}
+
+/* searching  */
+.search {
+    display: flex;
+    margin-bottom: 14px;
+    gap: 8px;
+}
+
+.search input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.search button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    background: #0b7285;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* main card section  */
+.main {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 18px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.city p {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 2px;
+}
+
+.temp {
+    font-size: 58px;
+    font-weight: 600;
+}
+
+.icon {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.icon img {
+    width: 90px;
+}
+
+.icon p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin-top: 8px;
+}
+
+/* info */
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    opacity: 0.85;
+    margin-top: 8px;
+}
