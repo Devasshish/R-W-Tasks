@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- products admin panel -->
+    <h1>Products</h1>
+    <!-- product add -->
+    <div class="add-search">
+        <div class="left">
+            <input type="text" placeholder="Product Title">
+            <input type="text" placeholder="Price">
+            <input type="text" placeholder="Category">
+            <input type="text" placeholder="Image URL">
+
+            <button class="btn">+ Add Product</button>
+
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Search by title">
+            <button class="btn">Search</button>
+        </div>
+    </div>
+    <!-- filter -->
+    <div class="filter">
+        <div class="sortByPrice">
+            <label for="price">Sort by Price:</label>
+            <select id="price">
+                <option value="lowToHigh">Low to High</option>
+                <option value="highToLow">High to Low</option>
+            </select>
+        </div>
+        <div class="filterByCategory">
+            <label for="category">Filter by Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+        </div>
+    </div>
+    <!-- products list -->
+    <div class="product-list">
+        <!-- products will be displayed here -->
+         <div class="product">
+            <img src="https://imgs.search.brave.com/CPzJU2zFco4U12zdY0GXoSnwl-x1uwtGAEI2NytUFg0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/MDUzLzUzNS9zbWFs/bC9lcXVpbi1ibHVl/LWxldHRlci1zLXBo/b3RvLmpwZw" alt="">
+            <h2>Wireless Headphones</h2>
+            <h3>Electronics</h3>
+            <div class="price">&#8377 15679</div>
+            <div class="btns">
+                <button class="edit-btn blue">Edit</button>
+                <button class="delete-btn red">Delete</button>
+            </div>
+         </div>
+    </div>
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
